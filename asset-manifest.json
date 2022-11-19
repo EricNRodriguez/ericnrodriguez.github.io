@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.657e50cf.css",
-    "main.js": "/static/js/main.e759744d.js",
-    "static/js/404.3d897464.chunk.js": "/static/js/404.3d897464.chunk.js",
-    "static/media/headshot.png": "/static/media/headshot.81c397f079a408101538.png",
-    "static/media/resume.pdf": "/static/media/resume.45a41d525c6c97921a25.pdf",
-    "index.html": "/index.html",
-    "static/media/hello-world.md": "/static/media/hello-world.2a77442156c35cf0783f.md",
-    "main.657e50cf.css.map": "/static/css/main.657e50cf.css.map",
-    "main.e759744d.js.map": "/static/js/main.e759744d.js.map"
+    "main.css": "/ericr_personal_website/static/css/main.657e50cf.css",
+    "main.js": "/ericr_personal_website/static/js/main.efefbf7e.js",
+    "static/js/404.3d897464.chunk.js": "/ericr_personal_website/static/js/404.3d897464.chunk.js",
+    "static/media/headshot.png": "/ericr_personal_website/static/media/headshot.81c397f079a408101538.png",
+    "static/media/resume.pdf": "/ericr_personal_website/static/media/resume.45a41d525c6c97921a25.pdf",
+    "index.html": "/ericr_personal_website/index.html",
+    "static/media/hello-world.md": "/ericr_personal_website/static/media/hello-world.2a77442156c35cf0783f.md",
+    "main.657e50cf.css.map": "/ericr_personal_website/static/css/main.657e50cf.css.map",
+    "main.efefbf7e.js.map": "/ericr_personal_website/static/js/main.efefbf7e.js.map"
   },
   "entrypoints": [
     "static/css/main.657e50cf.css",
-    "static/js/main.e759744d.js"
+    "static/js/main.efefbf7e.js"
   ]
 }
