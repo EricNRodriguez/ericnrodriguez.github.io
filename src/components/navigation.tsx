@@ -14,7 +14,7 @@ export const Navigation = (props: NavigationProps) => {
           <Link to={"/about"} onClick={props.onDirect}> About </Link>
         </li>
         <li>
-          <Link to={require("../assets/resume.pdf")} target={"_blank"} onClick={props.onDirect}> Resume </Link>
+          <Link to={require("../assets/resume.pdf")} target={"_blank"} rel="noopener noreferrer"> Resume </Link>
         </li>
         <li>
           <Link to={"/blog"} onClick={props.onDirect}> Blog </Link>

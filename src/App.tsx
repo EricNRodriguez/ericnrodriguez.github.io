@@ -1,5 +1,5 @@
 import {Header} from "./pages/header";
-import {HashRouter, Navigate, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import './App.scss';
 import {About} from "./pages/about";
 import {Contact} from "./pages/contact";
@@ -29,7 +29,7 @@ export const App = () => {
   return (
     // Hash router is required to play nicely with github pages. The hash in the route means that
     // the sub-route is only seen client side, avoiding the 404 mess
-    <HashRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ScrollToTop />
       <Header/>
       <main>
@@ -44,7 +44,7 @@ export const App = () => {
           <Route path="/404" element={ <NotFoundPage />} />
         </Routes>
       </main>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
