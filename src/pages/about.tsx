@@ -32,7 +32,7 @@ export const About = () => {
              </p>
              <p>
                Im a full time Software Engineer concurrently finishing off the
-               final few subjects of undergraduate computer science and telecommunications
+               final few subjects of an undergraduate computer science and telecommunications
                engineering degree. I have a large interest in both theoretical computer science
                and web application development, and am generally interested in chatting about anything relating
                to software design or applied mathematics. As a result of my undergraduate thesis,
