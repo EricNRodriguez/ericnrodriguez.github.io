@@ -31,7 +31,14 @@ export const About = () => {
                Hi, I'm Eric.
              </p>
              <p>
-               I am a Software Engineer that is currently finishing off my undergraduate studies in computer science and telecommunications engineering (with a heavy focus on the former) whilst working. I have a large interest in both theoretical computer science and web application development and am generally interested in chatting about anything relating to software design or applied mathematics. As a result of my undergraduate thesis, I also have a surprisingly large amount of knowledge and interest in anomaly detection, particularly as it relates to high dimensional imagery. Outside of development, I find myself hiking, cycling, camping etc, generally anything that involves being outside.
+               Im a full time Software Engineer concurrently finishing off the
+               final few subjects of undergraduate computer science and telecommunications
+               engineering degree. I have a large interest in both theoretical computer science
+               and web application development, and am generally interested in chatting about anything relating
+               to software design or applied mathematics. As a result of my undergraduate thesis,
+               I also have a surprisingly large amount of knowledge and interest in anomaly detection,
+               particularly as it relates to high dimensional imagery. Outside of development,
+               I find myself hiking, cycling, camping etc, generally anything that involves being outside.
 
              </p>
              <p>
