@@ -1,0 +1,69 @@
+@import "src/constants";
+
+.properties {
+  table {
+
+    /* equal sized cols */
+    table-layout: fixed;
+
+    /* drop the gap between rows */
+    border-collapse: collapse;
+
+    /* push table width to fill parent div */
+    width: 100%;
+  }
+
+  &.expanded {
+    width: 100%;
+
+    table, tbody {
+      width: 100%;
+    }
+  }
+
+
+  td {
+    width: 50%;
+    padding: $unit;
+  }
+  tr {
+    border: solid;
+
+    /* add hz lines between rows,
+       including above
+       the first and below the last
+    */
+    border-width: 0px 0px 0.25px 0px;
+    &:first-child {
+      border-width: 0.25px 0px 0.25px 0px;
+    }
+
+
+    &:nth-child(odd) {
+      background-color: darken($neutral, 2);
+    }
+
+  }
+}
+
+.property-wrapper {
+  /* table content should wrap when there
+    is limited horizontal space
+   */
+  word-break: break-all;
+
+  .property-key {
+    font-weight: bold;
+  }
+
+  .property-value {
+    margin-left: 0.5 * $unit;
+  }
+
+  &.private {
+    .property-value {
+      color: transparent;
+      text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+  }
+}

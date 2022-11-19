@@ -1,0 +1,25 @@
+@import "../pages/header";
+
+.social-contacts {
+  padding: $unit;
+
+  ul {
+    @include flex-row-main-centered;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  li {
+    list-style: none;
+    display: block;
+    margin: 0.5*$unit;
+  }
+
+  a {
+    color: black;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "constants";
+@import "src/constants";
+
+main {
+    padding: $page-side-margin;
+    margin-top: 3*$unit;
+}
+
+hr {
+    margin: 1em 0;
+}
+
+a:hover {
+    color: $accent;
+}
+

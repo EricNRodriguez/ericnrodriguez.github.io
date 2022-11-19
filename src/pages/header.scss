@@ -1,0 +1,171 @@
+@import "../constants";
+
+$header-height: 3*$unit;
+$nav-button-height: 2*$unit;
+$header-background-color: white;
+$header-z-index: 10;
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-row-main-centered {
+    @include flex-row;
+    justify-content: center;
+}
+
+@mixin flex-row-secondary-centered {
+    @include flex-row;
+    align-items: center;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-col-main-centered {
+    @include flex-col;
+    justify-content: center;
+}
+
+@mixin flex-col-secondary-centered {
+    @include flex-col;
+    align-items: center;
+}
+
+.header {
+    background-color: rgba($neutral, 0.99);
+
+    margin: 0px;
+    padding: 0px $page-side-margin;
+    width: calc(100% - 2*$page-side-margin);
+
+    box-shadow: 0px 0px 2px 0px rgba(9, 9, 9, 0.25);
+
+    position: fixed;
+
+    top: 0;
+    min-height: $header-height;
+
+    z-index: $header-z;
+
+    div {
+        height: 100%;
+    }
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        padding: 0px;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+.separated-header {
+    @include flex-row;
+    justify-content: space-between;
+
+    .left-aligned-row {
+        @include flex-row;
+        justify-content: left;
+    }
+
+    .right-aligned-row {
+        @include flex-row;
+        justify-content: right;
+        padding: 0px;
+    }
+}
+
+.text-logo-wrapper {
+    @include flex-col-main-centered;
+    height: $header-height;
+}
+
+.text-logo-link {
+    @include flex-row-secondary-centered;
+}
+
+.text-logo {
+    display: inline-block;
+    font-size: 24px;
+    white-space: nowrap;
+    color: $accent;
+    font-weight: normal;
+}
+
+.hz-nav {
+    ul {
+        @include flex-row-main-centered;
+
+        li {
+            margin: 0 $unit 0 $unit;
+        }
+    }
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.side-nav {
+    display: block;
+    box-shadow: inset 0px 0.5px rgba(9, 9, 9, 0.23);
+    background-color: $neutral;
+
+    right: 0px;
+    left: 0px;
+
+    ul {
+        margin: 0px;
+        padding: 0;
+
+        li {
+           @include flex-col-secondary-centered;
+           margin: $unit 0 $unit 0;
+       }
+
+   }
+
+    /*
+        height transition for the header when hamburger is opened in mobile view.
+    */
+    overflow: hidden;
+    max-height: 15em;
+    transition: max-height 0.25s ease-in-out;
+    &.hidden {
+        max-height: 0em;
+    }
+
+}
+
+.hamburger-wrapper {
+    @include flex-col-secondary-centered;
+    min-height: $header-height;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        .hz-nav {
+            display: none;
+        }
+    }
+
+    .hamburger-react:active {
+        color: $accent;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .mobile-only {
+        display: none;
+    }
+
+    .hamburger-react:hover {
+        color: $accent;
+    }
+}

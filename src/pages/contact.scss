@@ -1,0 +1,20 @@
+@import "header";
+
+.contact-section {
+  @include flex-col-secondary-centered;
+
+  hr {
+    width: 100%;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .contact-content {
+    /*
+      Make the width be as wide as the longest line of text
+     */
+    display: inline-block;
+  }
+}
