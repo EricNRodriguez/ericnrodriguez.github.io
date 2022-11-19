@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkericr_personal_website=self.webpackChunkericr_personal_website||[]).push([[404],{6404:function(e,s,c){e.exports=c.p+"static/media/hello-world.2a77442156c35cf0783f.md"}}]);
