@@ -27,8 +27,6 @@ const blogMetadata = {
 
 export const App = () => {
   return (
-    // Hash router is required to play nicely with github pages. The hash in the route means that
-    // the sub-route is only seen client side, avoiding the 404 mess
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ScrollToTop />
       <Header/>
